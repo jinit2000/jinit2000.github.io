@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jinit Patel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.emailjs.com; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; connect-src 'self' https://api.emailjs.com;">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Portfolio</h1>
+	  <button class="menu-toggle" aria-label="Toggle Navigation">☰</button>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="section">
+  <div class="home-content">
+    <h2>Hi, I'm Jinit Patel</h2>
+    <p>Software Developer | AI/ML Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+    
+    <div class="social-links">
+      <a href="https://github.com/jinit2000" target="_blank">
+      <img src="images/github-icon.png" alt="GitHub" class="social-icon">
+      </a>
+      <a href="mailto:jinitpatel4112000@gmail.com">
+      <img src="images/gmail-icon.png" alt="Gmail" class="social-icon">
+      </a>
+      <a href="https://www.linkedin.com/in/jinitpatel04/" target="_blank">
+      <img src="images/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+      </a>
+    </div>
+    
+    <a href="Resume.pdf" class="btn" download>Resume</a>
+  </div>
+</section>
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I'm a passionate software developer currently pursuing a Master of Engineering in Computer Science at Carleton University, Canada. With experience in full-stack development, AI/ML, and deep learning techniques, I strive to create impactful solutions that solve real-world problems. I enjoy blending traditional methods like linear regression with modern deep learning to enhance model performance, especially in industries such as finance, healthcare, and retail. Outside of coding, I’m an avid badminton player and a lifelong learner with a love for entrepreneurship.</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Smart Irrigation System</h3>
+        <p>A smart irrigation system that optimizes water usage for farming through sensor data and predictive models.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Budget Planner with Forecasting</h3>
+        <p>An app that helps users set financial goals and track their spending, with built-in forecasting features.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <div>Python</div>
+      <div>Machine Learning</div>
+      <div>TensorFlow</div>
+      <div>JavaScript</div>
+      <div>React.js</div>
+      <div>SQL</div>
+      <div>Deep Learning</div>
+      <div>Full-Stack Development</div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="hidden" name="to_name" value="Jinit Patel"> <!-- Recipient name -->
+      <input type="text" name="from_name" placeholder="Your Name" required>
+      <input type="email" name="from_email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div id="status"></div>
+  </section>
+
+  <footer>
+    <p>© 2024 Jinit Patel. All rights reserved.</p>
+  </footer>
+
+  <!-- Ensure EmailJS script loads before your custom JS -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+	
